@@ -1,3 +1,3 @@
 # Advent of Code
 
-Solutions to Advent of Code challenges.
+My solutions to [Advent of Code](adventofcode.com) challenges.
