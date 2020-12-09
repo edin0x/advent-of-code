@@ -11,6 +11,8 @@ load_dotenv(dotenv_path)
 
 JSON_URL = os.getenv('JSON_URL')
 SESSION = os.getenv('SESSION')
+if len(sys.argv) <= 1:
+   sys.exit('No day provided as argument')
 DAY = str(sys.argv[1])
 
 req = urllib.request.Request(JSON_URL, None, { 'Cookie': 'session=' + SESSION }, method='GET')
