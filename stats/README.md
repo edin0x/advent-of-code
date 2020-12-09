@@ -2,4 +2,4 @@
 `pip3 install -r requirements.txt`
 
 # Run
-`python3 stats.py 9`
+`python3 stats.py <day>`
