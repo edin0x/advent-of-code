@@ -4,14 +4,14 @@ from os.path import join, dirname
 from dotenv import load_dotenv
 import urllib.request
 import json
+import sys
  
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
 JSON_URL = os.getenv('JSON_URL')
 SESSION = os.getenv('SESSION')
-
-DAY = '9'
+DAY = str(sys.argv[1])
 
 req = urllib.request.Request(JSON_URL, None, { 'Cookie': 'session=' + SESSION }, method='GET')
 
